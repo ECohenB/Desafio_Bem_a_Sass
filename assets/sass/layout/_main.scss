@@ -1,0 +1,51 @@
+/* Main */
+.main {
+    position: relative;
+    float: left;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.main__subtitle {
+    margin-left: 20px;
+    color: #313335;
+}
+
+.card {
+
+    float: left;
+    width: 300px;
+    text-align: left;
+    margin: 10px;
+    color: #313335;
+}
+
+.card__image {
+    width: 298px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.card__title {
+    font-weight: bold;
+}
+
+.card__description {
+    text-align: justify;
+    margin: 10px auto;
+}
+
+.card__tags {
+    width: 298px;
+    height: 89px;
+    color: #000000;
+    border-radius: 10px;
+}
+.card__tags-logo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
