@@ -1,21 +1,47 @@
 
 .header {
-    display: flex; /* Usa Flexbox para alinear los elementos */
-    align-items: center; /* Alinea verticalmente los elementos */
-    justify-content:left; /* Distribuye el espacio entre los elementos */
-    padding: 20px; /* Ajusta el padding según sea necesario */
-    border-bottom: 1px solid $color-border; /* Borde inferior para el header */
+    display: flex; 
+    align-items: center; 
+    justify-content:space-between; 
+    padding: 20px; 
+    border-bottom: 1px solid $color-border; 
     gap: 10px;
 
+    &__left{
+        display: flex;
+        align-items: center;
+        margin-inline: 20px;
+    }
     &__logo {
-        height: 50px; /* Ajusta el tamaño de la imagen del logo según sea necesario */
-        width: auto; /* Mantiene la proporción de la imagen */
+        height: 50px; 
+        width: auto; 
         border-radius: 4px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 
     &__title {
-        font-size: 24px; /* Ajusta el tamaño de la fuente del título según sea necesario */
-        margin: 0; /* Elimina el margen por defecto */
+        font-size: 24px; 
+        margin: 10px; 
+        
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+      }
+    &__login-button,
+    &__signup-button {
+        display: flex;
+        align-items:center;
+        text-align:center;
+        background-color: $button-color;
+        color: $google-button-color;
+        border: 1px solid #0000;
+        border-radius: 8px;
+        margin: 5px;
+        cursor: pointer;
+        height: 40px;  
+        padding: 10px;
+        width: auto;
+        
     }
 }
